@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="hamdani.css">
+    <title>UNDANGAN JOGING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="condon/simplyCountdown.theme.default.css" />
+    <script src="condon/simplyCountdown.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+</head>
+
+<body>
+    <div class="atasan ">
+        <div class="contener ">
+            <div class="contener1 atas">
+                <h3 class="p1">Undangan Mabar</h3>
+                <p class="p2 flex justify-center items-center ">MUH Squad</p>
+                <h3 class="p1 flex justify-center items-center font-semibold">Minggu, 22 september 2024</h3>
+            </div>
+            <div class="contener2 bawah">
+                <p class="p3  ">Kepada Yth:</p>
+                <span class="p4 warna ">MUH Squad</span>
+                <div class="btn">
+                    <a href="#isian">
+                        <button class="btn1" onclick="buka()">Buka undangan</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="isian" id="isian">
+        <div class="conisian">
+            <h3 class="head">Bantai Publik</h3>
+            <div class="conisian1 ">
+
+                <h3 class="c0 kiri">Dengan hormat kami mengndang rekan-rekan sekalian untuk hadir dalam acara :</h3>
+                <p class="p4 c1 kiri">Mabar Bantai Publik</p>
+                <h3 class="p3 c2 kanan">Pada tanggal 22 september 2024</h3>
+                <h3 class="p3 c2 kanan">Jam 20.00 - Selesai</h3>
+                <p class="simply-countdown kiri"></p>
+                <h1 class=" c3 kiri">Tempat</h1>
+                <h3 class="c5 p3 kanan">MPL ARENA</h3>
+                <h3 class="p3 c4 kanan">Maps :</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.595348038823!2d106.76179716708005!3d-6.1777401483582155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f700be1a2ff3%3A0xbc741720d0191b5b!2sArena%20MPL!5e0!3m2!1sid!2sid!4v1727004645844!5m2!1sid!2sid"
+                    width="300" height="300 style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="conisian2">
+                <h3 class="head"> Yang akan di hadiri oleh :</h3>
+                <div class="foto kiri">
+                    <img class="img" src="gambar/deni.jpg" alt="huha" height="100" width="">
+                    <p class="nama">DENI PRIYANTO</p>
+                </div>
+                <div class="foto kanan">
+                    <p class="nama ">KRISNO</p>
+                    <img class="img" src="gambar/kris.jpg" alt="huha" height="100" width="">
+                </div>
+                <div class="foto kiri">
+                    <img class="img" src="gambar/erik.jpg " alt="huha" height="100" width="">
+                    <p class="nama">ERIK KUSUMA</p>
+                </div>
+                <div class="foto kanan">
+                    <p class="nama">AVISKA SAPUTRA</p>
+                    <img class="img" src="gambar/apis.jpg" alt="huha" height="100" width="">
+                </div>
+
+            </div>
+
+            <div class="conisian2">
+                <h3 class="head kiri"> Susunan acara</h3>
+                <div class="acara">
+                    <h3 class="h3">Berikut adalah susunan acaranya :</h3>
+                    <p class="susunan">1. Login jam 8 malam.</p>
+                    <p class="susunan">2. Masuk loby.</p>
+                    <p class="susunan">3. Mulai main.</p>
+                    <p class="susunan">4. Bantai-bantai.</p>
+                    <p class="susunan">5. Menang.</p>
+                    <p class="susunan">6. Glory.</p>
+                </div>
+
+                <div class="pilihan bawah" id="pilihan">
+                    <h3 class="tanya">Apakah anda akan datang pada acara ini?</h3>
+                    <div class="pilihan1">
+                        <p>
+                            <button class="tombol" id="iya" onclick="iya()">IYA</button>
+                        </p>
+                        <p>
+                            <button class="tombol1" id="ora" onclick="tidak()">TIDAK</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="footer">&copy; product by hamdani</p>
+
+
+
+        </div>
+    </div>
+
+    <div id="contener-musik">
+        <audio id="song" autoplay loop>
+            <source src="musik/kanaboon.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="tombol-musik" id="tombolMusik">
+            <i class="ph ph-pause"></i>
+        </div>
+
+        <!-- <div class="tombol-musik1" id="tombolMusik1">
+            <button>
+              <i class="ph ph-play"></i>
+            </button>
+        </div> -->
+
+    </div>
+
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <script src="hamdani.js"></script>
+
+</body>
+
+</html>
