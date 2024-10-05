@@ -156,6 +156,8 @@ body {
     font-family: "Playwrite CU", cursive;
     color: blue;
     padding-left: 20px;
+    border-bottom-right-radius: 50px;
+    width: 40vh;
    
 
 }
